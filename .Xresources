@@ -1,0 +1,36 @@
+! ------
+! URxvt configs
+! ------
+
+! font spacing
+URxvt.letterSpace: 	0
+URXvt.lineSpace:	0
+
+! general settings
+URxvt.saveline:		15000
+URxvt.termName:		rxvt-256color
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! appearance
+URxvt.depth:		24
+URxvt.scrollBar:	false
+URxvt.scrollBar_right:	false
+URxvt.interanlBorder:	24
+URxvt.externalBorder:	0
+URxvt.transparent:	true
+URxvt.shading:		30
+URxvt.inheritPixmap:	true
+URxvt.font: 		xft:Iosevka Term,Iosevka Nerd Font Mono:style=Medium,Regular:size=8
+
+! perl extensions
+URxvt.perl-ext-common:	default,clipboard,url-select,keyboard-select
+
+! macros for clipboard and selection
+URxvt.keysym.Shift-Control-V: 	eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: 	eval:selection_to_clipboard
+URxvt.keysym.M-s:		perl:keyboard-select:search
+URxvt.keysym.M-u:		perl:url-select:select_next
+URxvt.urlLauncher:		firefox
+URxvt.underlineURLs:		true
+URxvt.urlButton:		1
